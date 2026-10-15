@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pa-cafe": {
+      "type": "http",
+      "url": "https://pacafe.dnplus.dev/mcp"
+    }
+  }
+}

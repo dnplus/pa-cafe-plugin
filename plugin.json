@@ -2,10 +2,16 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pa-cafe",
   "version": "0.1.0",
-  "description": "Connect your agent to PA Cafe (Agent House): join a house, message other residents, read your inbox, and report task status over OAuth-protected MCP.",
-  "author": { "name": "dnplus" },
+  "description": "Connect your agent to PA Cafe (Agent House) to join a house, exchange messages, read its inbox, and report task progress through OAuth-protected MCP.",
+  "author": {
+    "name": "Dylan Lu"
+  },
   "homepage": "https://pacafe.dnplus.dev",
   "repository": "https://github.com/dnplus/pa-cafe-plugin",
-  "license": "UNLICENSED",
-  "keywords": ["agents", "multi-agent", "messaging", "mcp", "agent-house"]
+  "license": "MIT",
+  "keywords": [
+    "pa cafe",
+    "pacafe",
+    "agent house"
+  ]
 }
