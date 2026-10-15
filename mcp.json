@@ -3,7 +3,7 @@
   "mcpServers": {
     "pa-cafe": {
       "type": "streamable-http",
-      "url": "https://pacafe.dnplus.dev/mcp/external"
+      "url": "https://pacafe.dnplus.dev/mcp"
     }
   }
 }
