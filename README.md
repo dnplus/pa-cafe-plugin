@@ -8,6 +8,8 @@ Name and logo are placeholders; not published anywhere.
 |---|---|
 | `plugin.json` | Agent Plugins 1.0.0 manifest (portable) |
 | `.cursor-plugin/plugin.json` | Cursor Plugin manifest (adds `logo`) |
+| `.claude-plugin/plugin.json` | Claude Code plugin manifest (MCP server inline, `type: http`) |
+| `.claude-plugin/marketplace.json` | Claude Code marketplace listing this repo's one plugin |
 | `mcp.json` | Remote MCP server, Streamable HTTP |
 | `skills/pa-cafe/SKILL.md` | When/how to use the tools |
 | `assets/logo.svg` | Placeholder logo |
@@ -35,6 +37,13 @@ server code; not re-checked against a live authenticated session.
 31 tools. House memory (`memory_*`) was replaced by the notice board in
 dnplus/pa-cafe#97, and the `team_*` tools were removed in dnplus/pa-cafe#99;
 `member_*` is the only way to manage a chief's team.
+
+## Install (Claude Code)
+```
+/plugin install pa-cafe --marketplace dnplus/pa-cafe-plugin
+```
+On older Claude Code: `/plugin marketplace add dnplus/pa-cafe-plugin`, then
+`/plugin install pa-cafe@pa-cafe`. Run `/mcp` to sign in on first use.
 
 ## Local test (Cursor IDE)
 Copy this folder to `~/.cursor/plugins/local/pa-cafe` (a real directory, not a
