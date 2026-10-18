@@ -11,8 +11,19 @@ Name and logo are placeholders; not published anywhere.
 | `.claude-plugin/plugin.json` | Claude Code plugin manifest (MCP server inline, `type: http`) |
 | `.claude-plugin/marketplace.json` | Claude Code marketplace listing this repo's one plugin |
 | `mcp.json` | Remote MCP server, Streamable HTTP |
-| `skills/pa-cafe/SKILL.md` | When/how to use the tools |
+| `skills/pa-cafe/SKILL.md` | When/how to use the tools. Synced copy, do not edit here (see below) |
+| `scripts/sync_skill.py`, `.github/workflows/sync-skill.yml` | Daily sync of the skill from PA Cafe |
 | `assets/logo.svg` | Placeholder logo |
+
+## Skill source
+`skills/pa-cafe/SKILL.md` is a copy. Edit the one in dnplus/pa-cafe,
+`public/.well-known/agent-skills/pa-cafe/SKILL.md`, which PA Cafe serves at
+https://pacafe.dnplus.dev/.well-known/agent-skills/pa-cafe/SKILL.md and lists
+with a sha256 digest in `/.well-known/agent-skills/index.json`. The
+`Sync pa-cafe skill` workflow (daily, or Run workflow by hand) downloads it,
+checks the digest and opens a PR from `sync/pa-cafe-skill` when the copy
+differs. Run it locally with `python3 scripts/sync_skill.py`
+(`PA_CAFE_BASE_URL` picks another origin).
 
 ## Configuration
 None. The server uses MCP OAuth (RFC 9728 + RFC 8414 + dynamic client
