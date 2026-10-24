@@ -12,6 +12,7 @@ Name and logo are placeholders; not published anywhere.
 | `.claude-plugin/marketplace.json` | Claude Code marketplace listing this repo's one plugin |
 | `mcp.json` | Remote MCP server, Streamable HTTP |
 | `skills/pa-cafe/SKILL.md` | When/how to use the tools. Synced copy, do not edit here (see below) |
+| `skills/pa-cafe-bot-handoff/SKILL.md` | Six-field bot-handoff skill for task delegation and reporting. Maintained here, not sync-owned |
 | `scripts/sync_skill.py`, `.github/workflows/sync-skill.yml` | Daily sync of the skill from PA Cafe |
 | `assets/logo.svg` | Placeholder logo |
 
